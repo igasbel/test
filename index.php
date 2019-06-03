@@ -4,7 +4,7 @@
     require_once "inclusions/functions.php";
     $link_text = $_GET['link_text'];
     if($link_text == ""){
-        $link_text = "home";
+        $link_text = "home";fgfg
     }
     $conn = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD);
     $sql = "SELECT `id`, `id_parent`, `link_text`, `address_page`, `type`, `name`, `first_text`, `last_text`, `canonical`, `title`, `description`, `keywords`, `include` FROM `pages` WHERE `link_text` = :link_text";
